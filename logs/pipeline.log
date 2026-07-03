@@ -1,0 +1,123 @@
+2026-07-03 06:57:20 | INFO     | src.transform | Transformed gdp_current_usd: 3 clean rows (of 4 raw)
+2026-07-03 06:57:20 | INFO     | src.transform | Transformed gdp_current_usd: 3 clean rows (of 4 raw)
+2026-07-03 06:57:20 | WARNING  | src.transform | No records to transform for gdp_current_usd
+2026-07-03 06:57:20 | INFO     | src.transform | Transformed gdp_current_usd: 3 clean rows (of 4 raw)
+2026-07-03 06:57:20 | INFO     | src.transform | Transformed inflation_pct: 2 clean rows (of 2 raw)
+2026-07-03 06:57:43 | INFO     | __main__ | === Pipeline run started ===
+2026-07-03 06:57:43 | INFO     | __main__ | Fetching 11 indicators for TZA (2000-2024)
+2026-07-03 06:57:43 | INFO     | src.extract | Fetching NY.GDP.MKTP.CD (attempt 1/3)
+2026-07-03 06:57:58 | WARNING  | src.extract | Attempt 1 for NY.GDP.MKTP.CD failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 06:58:00 | INFO     | src.extract | Fetching NY.GDP.MKTP.CD (attempt 2/3)
+2026-07-03 06:58:15 | WARNING  | src.extract | Attempt 2 for NY.GDP.MKTP.CD failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 06:58:19 | INFO     | src.extract | Fetching NY.GDP.MKTP.CD (attempt 3/3)
+2026-07-03 06:58:34 | WARNING  | src.extract | Attempt 3 for NY.GDP.MKTP.CD failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 06:58:34 | ERROR    | src.extract | Skipping indicator gdp_current_usd (NY.GDP.MKTP.CD): Failed to fetch NY.GDP.MKTP.CD after 3 attempts
+2026-07-03 06:58:34 | INFO     | src.extract | Fetching NY.GDP.MKTP.KD.ZG (attempt 1/3)
+2026-07-03 06:58:49 | WARNING  | src.extract | Attempt 1 for NY.GDP.MKTP.KD.ZG failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 06:58:51 | INFO     | src.extract | Fetching NY.GDP.MKTP.KD.ZG (attempt 2/3)
+2026-07-03 06:59:06 | WARNING  | src.extract | Attempt 2 for NY.GDP.MKTP.KD.ZG failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 06:59:10 | INFO     | src.extract | Fetching NY.GDP.MKTP.KD.ZG (attempt 3/3)
+2026-07-03 06:59:26 | WARNING  | src.extract | Attempt 3 for NY.GDP.MKTP.KD.ZG failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 06:59:26 | ERROR    | src.extract | Skipping indicator gdp_growth_pct (NY.GDP.MKTP.KD.ZG): Failed to fetch NY.GDP.MKTP.KD.ZG after 3 attempts
+2026-07-03 06:59:26 | INFO     | src.extract | Fetching FP.CPI.TOTL.ZG (attempt 1/3)
+2026-07-03 06:59:41 | WARNING  | src.extract | Attempt 1 for FP.CPI.TOTL.ZG failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 06:59:43 | INFO     | src.extract | Fetching FP.CPI.TOTL.ZG (attempt 2/3)
+2026-07-03 06:59:58 | WARNING  | src.extract | Attempt 2 for FP.CPI.TOTL.ZG failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:00:02 | INFO     | src.extract | Fetching FP.CPI.TOTL.ZG (attempt 3/3)
+2026-07-03 07:00:17 | WARNING  | src.extract | Attempt 3 for FP.CPI.TOTL.ZG failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:00:17 | ERROR    | src.extract | Skipping indicator inflation_pct (FP.CPI.TOTL.ZG): Failed to fetch FP.CPI.TOTL.ZG after 3 attempts
+2026-07-03 07:00:17 | INFO     | src.extract | Fetching SL.UEM.TOTL.ZS (attempt 1/3)
+2026-07-03 07:00:32 | WARNING  | src.extract | Attempt 1 for SL.UEM.TOTL.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:00:34 | INFO     | src.extract | Fetching SL.UEM.TOTL.ZS (attempt 2/3)
+2026-07-03 07:00:50 | WARNING  | src.extract | Attempt 2 for SL.UEM.TOTL.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:00:54 | INFO     | src.extract | Fetching SL.UEM.TOTL.ZS (attempt 3/3)
+2026-07-03 07:01:09 | WARNING  | src.extract | Attempt 3 for SL.UEM.TOTL.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:01:09 | ERROR    | src.extract | Skipping indicator unemployment_pct (SL.UEM.TOTL.ZS): Failed to fetch SL.UEM.TOTL.ZS after 3 attempts
+2026-07-03 07:01:09 | INFO     | src.extract | Fetching SP.POP.TOTL (attempt 1/3)
+2026-07-03 07:01:24 | WARNING  | src.extract | Attempt 1 for SP.POP.TOTL failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:01:26 | INFO     | src.extract | Fetching SP.POP.TOTL (attempt 2/3)
+2026-07-03 07:01:41 | WARNING  | src.extract | Attempt 2 for SP.POP.TOTL failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:01:45 | INFO     | src.extract | Fetching SP.POP.TOTL (attempt 3/3)
+2026-07-03 07:02:01 | WARNING  | src.extract | Attempt 3 for SP.POP.TOTL failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:02:01 | ERROR    | src.extract | Skipping indicator population_total (SP.POP.TOTL): Failed to fetch SP.POP.TOTL after 3 attempts
+2026-07-03 07:02:01 | INFO     | src.extract | Fetching SP.POP.GROW (attempt 1/3)
+2026-07-03 07:02:16 | WARNING  | src.extract | Attempt 1 for SP.POP.GROW failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:02:18 | INFO     | src.extract | Fetching SP.POP.GROW (attempt 2/3)
+2026-07-03 07:02:33 | WARNING  | src.extract | Attempt 2 for SP.POP.GROW failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:02:37 | INFO     | src.extract | Fetching SP.POP.GROW (attempt 3/3)
+2026-07-03 07:02:52 | WARNING  | src.extract | Attempt 3 for SP.POP.GROW failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:02:52 | ERROR    | src.extract | Skipping indicator population_growth_pct (SP.POP.GROW): Failed to fetch SP.POP.GROW after 3 attempts
+2026-07-03 07:02:52 | INFO     | src.extract | Fetching NE.EXP.GNFS.ZS (attempt 1/3)
+2026-07-03 07:03:08 | WARNING  | src.extract | Attempt 1 for NE.EXP.GNFS.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:03:10 | INFO     | src.extract | Fetching NE.EXP.GNFS.ZS (attempt 2/3)
+2026-07-03 07:03:25 | WARNING  | src.extract | Attempt 2 for NE.EXP.GNFS.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:03:29 | INFO     | src.extract | Fetching NE.EXP.GNFS.ZS (attempt 3/3)
+2026-07-03 07:03:44 | WARNING  | src.extract | Attempt 3 for NE.EXP.GNFS.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:03:44 | ERROR    | src.extract | Skipping indicator exports_pct_gdp (NE.EXP.GNFS.ZS): Failed to fetch NE.EXP.GNFS.ZS after 3 attempts
+2026-07-03 07:03:44 | INFO     | src.extract | Fetching NE.IMP.GNFS.ZS (attempt 1/3)
+2026-07-03 07:03:59 | WARNING  | src.extract | Attempt 1 for NE.IMP.GNFS.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:04:01 | INFO     | src.extract | Fetching NE.IMP.GNFS.ZS (attempt 2/3)
+2026-07-03 07:04:17 | WARNING  | src.extract | Attempt 2 for NE.IMP.GNFS.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:04:21 | INFO     | src.extract | Fetching NE.IMP.GNFS.ZS (attempt 3/3)
+2026-07-03 07:04:36 | WARNING  | src.extract | Attempt 3 for NE.IMP.GNFS.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:04:36 | ERROR    | src.extract | Skipping indicator imports_pct_gdp (NE.IMP.GNFS.ZS): Failed to fetch NE.IMP.GNFS.ZS after 3 attempts
+2026-07-03 07:04:36 | INFO     | src.extract | Fetching SI.POV.NAHC (attempt 1/3)
+2026-07-03 07:04:51 | WARNING  | src.extract | Attempt 1 for SI.POV.NAHC failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:04:53 | INFO     | src.extract | Fetching SI.POV.NAHC (attempt 2/3)
+2026-07-03 07:05:08 | WARNING  | src.extract | Attempt 2 for SI.POV.NAHC failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:05:12 | INFO     | src.extract | Fetching SI.POV.NAHC (attempt 3/3)
+2026-07-03 07:05:27 | WARNING  | src.extract | Attempt 3 for SI.POV.NAHC failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:05:27 | ERROR    | src.extract | Skipping indicator poverty_headcount_pct (SI.POV.NAHC): Failed to fetch SI.POV.NAHC after 3 attempts
+2026-07-03 07:05:27 | INFO     | src.extract | Fetching SE.ADT.LITR.ZS (attempt 1/3)
+2026-07-03 07:05:42 | WARNING  | src.extract | Attempt 1 for SE.ADT.LITR.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:05:44 | INFO     | src.extract | Fetching SE.ADT.LITR.ZS (attempt 2/3)
+2026-07-03 07:06:00 | WARNING  | src.extract | Attempt 2 for SE.ADT.LITR.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:06:04 | INFO     | src.extract | Fetching SE.ADT.LITR.ZS (attempt 3/3)
+2026-07-03 07:06:19 | WARNING  | src.extract | Attempt 3 for SE.ADT.LITR.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:06:19 | ERROR    | src.extract | Skipping indicator literacy_rate_pct (SE.ADT.LITR.ZS): Failed to fetch SE.ADT.LITR.ZS after 3 attempts
+2026-07-03 07:06:19 | INFO     | src.extract | Fetching IT.NET.USER.ZS (attempt 1/3)
+2026-07-03 07:06:34 | WARNING  | src.extract | Attempt 1 for IT.NET.USER.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:06:36 | INFO     | src.extract | Fetching IT.NET.USER.ZS (attempt 2/3)
+2026-07-03 07:06:51 | WARNING  | src.extract | Attempt 2 for IT.NET.USER.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:06:55 | INFO     | src.extract | Fetching IT.NET.USER.ZS (attempt 3/3)
+2026-07-03 07:07:10 | WARNING  | src.extract | Attempt 3 for IT.NET.USER.ZS failed: HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=15)
+2026-07-03 07:07:10 | ERROR    | src.extract | Skipping indicator internet_users_pct (IT.NET.USER.ZS): Failed to fetch IT.NET.USER.ZS after 3 attempts
+2026-07-03 07:07:10 | ERROR    | __main__ | No indicators were successfully fetched -- aborting
+2026-07-03 07:11:51 | INFO     | __main__ | === Pipeline run started ===
+2026-07-03 07:11:51 | INFO     | __main__ | Fetching 11 indicators for TZA (2000-2024)
+2026-07-03 07:11:51 | INFO     | src.extract | Fetching NY.GDP.MKTP.CD (attempt 1/3)
+2026-07-03 07:11:51 | INFO     | src.extract | Fetched 25 records for NY.GDP.MKTP.CD
+2026-07-03 07:11:51 | INFO     | src.extract | Fetching NY.GDP.MKTP.KD.ZG (attempt 1/3)
+2026-07-03 07:11:52 | INFO     | src.extract | Fetched 25 records for NY.GDP.MKTP.KD.ZG
+2026-07-03 07:11:52 | INFO     | src.extract | Fetching FP.CPI.TOTL.ZG (attempt 1/3)
+2026-07-03 07:11:52 | INFO     | src.extract | Fetched 25 records for FP.CPI.TOTL.ZG
+2026-07-03 07:11:52 | INFO     | src.extract | Fetching SL.UEM.TOTL.ZS (attempt 1/3)
+2026-07-03 07:11:52 | INFO     | src.extract | Fetched 25 records for SL.UEM.TOTL.ZS
+2026-07-03 07:11:52 | INFO     | src.extract | Fetching SP.POP.TOTL (attempt 1/3)
+2026-07-03 07:11:52 | INFO     | src.extract | Fetched 25 records for SP.POP.TOTL
+2026-07-03 07:11:52 | INFO     | src.extract | Fetching SP.POP.GROW (attempt 1/3)
+2026-07-03 07:11:52 | INFO     | src.extract | Fetched 25 records for SP.POP.GROW
+2026-07-03 07:11:52 | INFO     | src.extract | Fetching NE.EXP.GNFS.ZS (attempt 1/3)
+2026-07-03 07:11:52 | INFO     | src.extract | Fetched 25 records for NE.EXP.GNFS.ZS
+2026-07-03 07:11:52 | INFO     | src.extract | Fetching NE.IMP.GNFS.ZS (attempt 1/3)
+2026-07-03 07:11:53 | INFO     | src.extract | Fetched 25 records for NE.IMP.GNFS.ZS
+2026-07-03 07:11:53 | INFO     | src.extract | Fetching SI.POV.NAHC (attempt 1/3)
+2026-07-03 07:11:53 | INFO     | src.extract | Fetched 25 records for SI.POV.NAHC
+2026-07-03 07:11:53 | INFO     | src.extract | Fetching SE.ADT.LITR.ZS (attempt 1/3)
+2026-07-03 07:11:53 | INFO     | src.extract | Fetched 25 records for SE.ADT.LITR.ZS
+2026-07-03 07:11:53 | INFO     | src.extract | Fetching IT.NET.USER.ZS (attempt 1/3)
+2026-07-03 07:11:53 | INFO     | src.extract | Fetched 25 records for IT.NET.USER.ZS
+2026-07-03 07:11:53 | INFO     | src.transform | Transformed gdp_current_usd: 25 clean rows (of 25 raw)
+2026-07-03 07:11:53 | INFO     | src.transform | Transformed gdp_growth_pct: 25 clean rows (of 25 raw)
+2026-07-03 07:11:53 | INFO     | src.transform | Transformed inflation_pct: 25 clean rows (of 25 raw)
+2026-07-03 07:11:53 | INFO     | src.transform | Transformed unemployment_pct: 25 clean rows (of 25 raw)
+2026-07-03 07:11:53 | INFO     | src.transform | Transformed population_total: 25 clean rows (of 25 raw)
+2026-07-03 07:11:53 | INFO     | src.transform | Transformed population_growth_pct: 25 clean rows (of 25 raw)
+2026-07-03 07:11:53 | INFO     | src.transform | Transformed exports_pct_gdp: 25 clean rows (of 25 raw)
+2026-07-03 07:11:53 | INFO     | src.transform | Transformed imports_pct_gdp: 25 clean rows (of 25 raw)
+2026-07-03 07:11:53 | INFO     | src.transform | Transformed poverty_headcount_pct: 4 clean rows (of 25 raw)
+2026-07-03 07:11:53 | INFO     | src.transform | Transformed literacy_rate_pct: 6 clean rows (of 25 raw)
+2026-07-03 07:11:53 | INFO     | src.transform | Transformed internet_users_pct: 25 clean rows (of 25 raw)
+2026-07-03 07:11:53 | INFO     | src.load | Loaded 235 rows into /home/ngatungavic/Downloads/etl/data/tanzania_indicators.db (table: indicators)
+2026-07-03 07:11:53 | INFO     | src.load | Wrote 235 rows to /home/ngatungavic/Downloads/etl/data/tanzania_indicators.csv
+2026-07-03 07:11:53 | INFO     | __main__ | === Pipeline run finished in 1.9s | 235 rows | 11/11 indicators succeeded ===

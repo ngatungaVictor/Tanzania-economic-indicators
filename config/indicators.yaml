@@ -1,0 +1,52 @@
+# Tanzania Economic & Development Indicators
+# Source: World Bank Open Data API (https://api.worldbank.org/v2/)
+# Full indicator catalogue: https://data.worldbank.org/indicator
+
+country_code: "TZA"
+start_year: 2000
+end_year: 2024
+
+indicators:
+  - code: "NY.GDP.MKTP.CD"
+    name: "gdp_current_usd"
+    description: "GDP (current US$)"
+
+  - code: "NY.GDP.MKTP.KD.ZG"
+    name: "gdp_growth_pct"
+    description: "GDP growth (annual %)"
+
+  - code: "FP.CPI.TOTL.ZG"
+    name: "inflation_pct"
+    description: "Inflation, consumer prices (annual %)"
+
+  - code: "SL.UEM.TOTL.ZS"
+    name: "unemployment_pct"
+    description: "Unemployment, total (% of total labor force)"
+
+  - code: "SP.POP.TOTL"
+    name: "population_total"
+    description: "Population, total"
+
+  - code: "SP.POP.GROW"
+    name: "population_growth_pct"
+    description: "Population growth (annual %)"
+
+  - code: "NE.EXP.GNFS.ZS"
+    name: "exports_pct_gdp"
+    description: "Exports of goods and services (% of GDP)"
+
+  - code: "NE.IMP.GNFS.ZS"
+    name: "imports_pct_gdp"
+    description: "Imports of goods and services (% of GDP)"
+
+  - code: "SI.POV.NAHC"
+    name: "poverty_headcount_pct"
+    description: "Poverty headcount ratio at national poverty lines (% of population)"
+
+  - code: "SE.ADT.LITR.ZS"
+    name: "literacy_rate_pct"
+    description: "Literacy rate, adult total (% of people ages 15+)"
+
+  - code: "IT.NET.USER.ZS"
+    name: "internet_users_pct"
+    description: "Individuals using the Internet (% of population)"
